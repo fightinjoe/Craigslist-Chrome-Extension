@@ -1,0 +1,11 @@
+{
+  "name"           : "Craigslist image viewer",
+  "version"        : "0.1",
+  "description"    : "Displays the images for Craigslist inline",
+  "content_scripts": [
+    {
+      "matches" : ["http://*.craigslist.org/*/*", "http://*.craigslist.org/search/*"],
+      "js"      : ["jquery.1.5.1.min.js", "craigslist.js"]
+    }
+  ]
+}
